@@ -866,6 +866,9 @@ static const struct mfd_cell axp20x_cells[] = {
 		.of_compatible	= "x-powers,axp202-usb-power-supply",
 		.num_resources	= ARRAY_SIZE(axp20x_usb_power_supply_resources),
 		.resources	= axp20x_usb_power_supply_resources,
+	}, {
+		.name           = "axp20x-led",
+		.of_compatible  = "x-powers,axp20x-led",
 	},
 };
 
@@ -895,6 +898,9 @@ static const struct mfd_cell axp221_cells[] = {
 		.of_compatible	= "x-powers,axp221-usb-power-supply",
 		.num_resources	= ARRAY_SIZE(axp22x_usb_power_supply_resources),
 		.resources	= axp22x_usb_power_supply_resources,
+	}, {
+		.name           = "axp20x-led",
+		.of_compatible  = "x-powers,axp20x-led",
 	},
 };
 
@@ -924,6 +930,9 @@ static const struct mfd_cell axp223_cells[] = {
 		.of_compatible	= "x-powers,axp223-usb-power-supply",
 		.num_resources	= ARRAY_SIZE(axp22x_usb_power_supply_resources),
 		.resources	= axp22x_usb_power_supply_resources,
+	}, {
+		.name           = "axp20x-led",
+		.of_compatible  = "x-powers,axp20x-led",
 	},
 };
 
@@ -999,6 +1008,9 @@ static const struct mfd_cell axp288_cells[] = {
 		.resources	= axp288_power_button_resources,
 	}, {
 		.name		= "axp288_pmic_acpi",
+	}, {
+		.name           = "axp20x-led",
+		.of_compatible  = "x-powers,axp20x-led",
 	},
 };
 
@@ -1027,7 +1039,12 @@ static const struct mfd_cell axp803_cells[] = {
 		.resources	= axp803_usb_power_supply_resources,
 		.of_compatible	= "x-powers,axp813-usb-power-supply",
 	},
-	{	.name		= "axp20x-regulator" },
+	{
+		.name		= "axp20x-regulator"
+	}, {
+		.name           = "axp20x-led",
+		.of_compatible  = "x-powers,axp20x-led",
+	},
 };
 
 static const struct mfd_cell axp806_self_working_cells[] = {
@@ -1057,6 +1074,9 @@ static const struct mfd_cell axp809_cells[] = {
 	}, {
 		.id		= 1,
 		.name		= "axp20x-regulator",
+	}, {
+		.name           = "axp20x-led",
+		.of_compatible  = "x-powers,axp20x-led",
 	},
 };
 
@@ -1086,6 +1106,9 @@ static const struct mfd_cell axp813_cells[] = {
 		.num_resources	= ARRAY_SIZE(axp803_usb_power_supply_resources),
 		.resources	= axp803_usb_power_supply_resources,
 		.of_compatible	= "x-powers,axp813-usb-power-supply",
+	}, {
+		.name           = "axp20x-led",
+		.of_compatible  = "x-powers,axp20x-led",
 	},
 };
 
